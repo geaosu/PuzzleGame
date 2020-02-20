@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c3b696"
+    android:orientation="vertical"
+    tools:context=".activity.SetActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="#3B2C25">
+
+        <TextView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/back"
+            android:paddingRight="12dp"
+            android:text="返回"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="设置"
+            android:textAllCaps="false"
+            android:textColor="#E4A420"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="游戏模式："
+            android:textAllCaps="false"
+            android:textColor="#3B2C25"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgSelectMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbGeneral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:gravity="center"
+                android:text="一般模式（1）"
+                android:textAllCaps="false"
+                android:textColor="#3B2C25"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rbExchange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="交换模式（2）"
+                android:textAllCaps="false"
+                android:textColor="#3B2C25"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="游戏难度："
+            android:textAllCaps="false"
+            android:textColor="#3B2C25"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgSelectDifficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbEasyDifficulty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:gravity="center"
+                android:text="简单（1）"
+                android:textAllCaps="false"
+                android:textColor="#3B2C25"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rbLowDifficulty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="低难（2）"
+                android:textAllCaps="false"
+                android:textColor="#3B2C25"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rbMediumDifficulty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="中难（3）"
+                android:textAllCaps="false"
+                android:textColor="#3B2C25"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rbHighDifficulty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="高难（4）"
+                android:textAllCaps="false"
+                android:textColor="#3B2C25"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rbMetamorphosis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="变态（5）"
+                android:textAllCaps="false"
+                android:textColor="#3B2C25"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="游戏音乐："
+                android:textAllCaps="false"
+                android:textColor="#3B2C25"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <com.suke.widget.SwitchButton
+                android:id="@+id/sbMusic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:sb_checked="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="游戏音效："
+                android:textAllCaps="false"
+                android:textColor="#3B2C25"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <com.suke.widget.SwitchButton
+                android:id="@+id/sbSound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:sb_checked="true" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
